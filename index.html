@@ -195,7 +195,56 @@
                 height: 0.72em;
             }
         </style>
+    </section> 
+	
+<!-- Новый слайд-->
+    <section class="slide" id="vyvod">
+        <h2>Выводы</h2>
+		<ol align = "center" class = "spisok">
+            <li>Изучена технология веб-презентации</li>
+            <li>Был создан слайд с использованием HTML и CSS</li>
+            <li>Применена работа с Node.js</li>
+            <li>Презентация размещена на Git</li>
+        </ol>
+        <style>
+            #vyvod h2 {
+				padding-left: 580px;
+                font-size: 70px;
+				color: yellow;
+				font-family: monospace;
+            }
+					
+			#vyvod {
+				background: url("pictures/back.png") center no-repeat
+			}
+			
+			#vyvod ol {
+				position: relative;
+				font-size: 28px;
+				color: white;
+				text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+				text-transform: uppercase;
+				font-family: monospace;
+				z-index: 1;
+				overflow: hidden;
+				list-style-type: upper-alpha;
+            }
+			
+			#vyvod ol:before {
+				content: "";
+				position: absolute;
+				top: -60%;
+				left: -50%;
+				height: 200%;
+				width: 200%;
+				background: url("pictures/back.png") center no-repeat;
+				filter: blur(10px);
+				z-index: -1;
+			}
+			
+        </style>
     </section>
+<!---------------------------------------------------------------------------------------------------------------->	
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
